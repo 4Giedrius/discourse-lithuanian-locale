@@ -24,7 +24,7 @@ hooks:
           - cp -rT locale/ /var/www/discourse/
           - cp -f locale/reload_i18n.sh /root/reload_i18n.sh
           - chmod +x /root/reload_i18n.sh
-          - rm -rf locales
+          - rm -rf locale
 ```
 
 Rebuild your app by running `./launcher rebuild app`
