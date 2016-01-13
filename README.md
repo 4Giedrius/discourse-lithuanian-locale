@@ -20,7 +20,7 @@ hooks:
     - exec:
         cd: /tmp
         cmd:
-          - git clone https://github.com/4Giedrius/discourse-locale-override.git locale
+          - git clone https://github.com/4Giedrius/discourse-lithuanian-locale.git locale
           - cp -rT locale/ /var/www/discourse/
           - cp -f locale/reload_i18n.sh /root/reload_i18n.sh
           - chmod +x /root/reload_i18n.sh
