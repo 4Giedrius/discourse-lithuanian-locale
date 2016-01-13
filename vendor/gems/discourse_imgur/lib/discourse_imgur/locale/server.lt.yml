@@ -1,0 +1,5 @@
+lt:
+  site_settings:
+    enable_imgur: "Įjungi imgur API įkėlimui, kad nenaudoti vietos lokaliai"
+    imgur_client_id: "Jūsų imgur.com kliento ID, reikalingas paveikslėlių ikėlimui"
+    imgur_client_secret: "Jūsų imgur.com kliento slaptas raktas. Šiuo metu nėra reikalingas paveikslėlių įkėlimui, tačiau gali būti panaudojamas kitose situacijose."

@@ -1,0 +1,257 @@
+lt:
+  dates:
+    short_date_no_year: "D MMM"
+    short_date: "D MMM, YYYY"
+    long_date: "MMMM D, YYYY h:mma"
+  title: "Discourse"
+  topics: "Temos"
+  posts: "žinutės"
+  loading: "Kraunama"
+  powered_by_html: 'Veikia naudojant <a href="http://www.discourse.org">Discourse</a>, geriausiai matoma įjungus Javascript'
+  log_in: "Prisijungti"
+  backup:
+    not_enough_space_on_disk: "Diske neužtenka vietos įkelti šiai atsarginei kopijai."
+  not_logged_in: "Norint tęsti, jums reikia būti prisijungusiam."
+  embed:
+    start_discussion: "Pradėti diskusiją"
+    continue: "Tęsti diskusiją"
+    more_replies:
+      one: "dar %{count} atsakymas"
+      few: "dar %{count} atsakymai"
+      other: "dar %{count} atsakymų"
+    loading: "Kraunama diskusija..."
+    permalink: "Nuoroda"
+    in_reply_to: "▶ %{username}"
+    replies:
+      one: "%{count} atsakymas"
+      few: "%{count} atsakymai"
+      other: "%{count} atsakymų"
+  user_is_suspended: "Sustabdyti vartotojai negali rašyti pranešimų."
+  just_posted_that: "labai panašu į tai, ką parašėte prieš tai"
+  invalid_characters: "turi neleistinų simbolių"
+  next_page: "kitas puslapis →"
+  prev_page: "← praeitas puslapis"
+  page_num: "%{num} Puslapis "
+  topics_in_category: "Temos kategorijoje '%{category}'"
+  author_wrote: "%{author} parašė:"
+  num_posts: "Pranešimai:"
+  num_participants: "Dalyviai:"
+  read_full_topic: "Skaityti pilną temą"
+  rss_description:
+    latest: "Naujausios temos"
+    hot: "Karštos temos"
+  too_late_to_edit: "Šis pranešimas buvo sukurtas jau labai senai, todėl jo negalima redaguoti ar ištrinti."
+  groups:
+    default_names:
+      everyone: "visi"
+      admins: "administratoriai"
+      moderators: "moderatoriai"
+      staff: "personalas"
+      trust_level_0: "pasitikėjimo_lygis_0"
+      trust_level_1: "pasitikėjimo_lygis_1"
+      trust_level_2: "pasitikėjimo_lygis_2"
+      trust_level_3: "pasitikėjimo_lygis_3"
+      trust_level_4: "pasitikėjimo_lygis_4"
+  education:
+    until_posts:
+      one: "%{count} pranešimas"
+      few: "%{count} pranešimai"
+      other: "%{count} pranešimų"
+  activerecord:
+    attributes:
+      category:
+        name: "Kategorijos pavadinimas"
+      user_profile:
+        bio_raw: "Apie mane"
+    errors:
+      models:
+        topic:
+          attributes:
+            base:
+              too_many_users: "Vienu metu jūs galite siųsti įspėjimus tik vienam vartotojui."
+        user:
+          attributes:
+            password:
+              common: "yra vienas iš 10000 populiariausių slaptažodžių. Prašome pasirinkti saugesnį slaptažodį."
+            ip_address:
+              signup_not_allowed: "Registracijos nėra galimos iš šios paskyros."
+        color_scheme_color:
+          attributes:
+            hex:
+              invalid: "netinkama spalva"
+  vip_category_description: "Kategorija skirta nariams turintiems 3 pasitikėjimo lygį arba aukštesnį."
+  meta_category_description: "Diskusijos apie svetainę, jos organizavimą, kaip ji veikia ir kaip galima ja dar patobulinti."
+  staff_category_name: "Personalas"
+  staff_category_description: "Privati kategorija personalo diskusijoms. Temos matomos tik administratoriams ir moderatoriams."
+  trust_levels:
+    newuser:
+      title: "naujas vartotojas"
+    basic:
+      title: "pagrindinis vartotojas"
+  rate_limiter:
+    hours:
+      one: "%{count} valanda"
+      few: "%{count} valandos"
+      other: "%{count} valandų"
+    minutes:
+      one: "%{count} minutė"
+      few: "%{count} minutės"
+      other: "%{count} minučių"
+    seconds:
+      one: "%{count} sekundė"
+      few: "%{count} sekundės"
+      other: "%{count} sekundžių"
+  datetime:
+    distance_in_words:
+      half_a_minute: "pusė minutės"
+      less_than_x_seconds:
+        one: "mažiau nei %{count} sekundė"
+        few: "mažiau nei %{count} sekundės"
+        other: "mažiau nei %{count} sekundžių"
+      x_seconds:
+        one: "%{count} sekundė"
+        few: "%{count} sekundės"
+        other: "%{count} sekundžių"
+      less_than_x_minutes:
+        one: "mažiau nei %{count} minutė"
+        few: "mažiau nei %{count} minutės"
+        other: "mažiau nei %{count} minučių"
+      x_minutes:
+        one: "%{count} minutė"
+        few: "%{count} minutės"
+        other: "%{count} minučių"
+      about_x_hours:
+        one: "%{count} valanda"
+        few: "%{count} valandos"
+        other: "%{count} valandų"
+      x_days:
+        one: "%{count} diena"
+        few: "%{count} dienos"
+        other: "%{count} dienų"
+      about_x_months:
+        one: "apie %{count} mėnesį"
+        few: "apie %{count} mėnesius"
+        other: "apie %{count} mėnesių"
+      x_months:
+        one: "%{count} mėnesis"
+        few: "%{count} mėnesiai"
+        other: "%{count} mėnesių"
+      about_x_years:
+        one: "apie %{count} metus"
+        few: "apie %{count} metus"
+        other: "apie %{count} metų"
+      over_x_years:
+        one: "virš %{count} metų"
+        few: "virš %{count} metų"
+        other: "virš %{count} metų"
+      almost_x_years:
+        one: "beveik %{count} metai"
+        few: "beveik %{count} metai"
+        other: "beveik %{count} metų"
+    distance_in_words_verbose:
+      half_a_minute: "ką tik"
+      less_than_x_seconds:
+        one: "ką tik"
+        few: "ką tik"
+        other: "ką tik"
+      x_seconds:
+        one: "prieš %{count} sekundę"
+        few: "prieš %{count} sekundes"
+        other: "prieš %{count} sekundžių"
+      less_than_x_minutes:
+        one: "mažiau nei prieš %{count} minutę"
+        few: "mažiau nei prieš %{count} minutes"
+        other: "mažiau nei prieš %{count} minučių"
+      x_minutes:
+        one: "prieš %{count} minutę"
+        few: "prieš %{count} minutes"
+        other: "prieš %{count} minučių"
+      about_x_hours:
+        one: "prieš %{count} valandą"
+        few: "prieš %{count} valandas"
+        other: "prieš %{count} valandų"
+      x_days:
+        one: "prieš %{count} dieną"
+        few: "prieš %{count} dienas"
+        other: "prieš %{count} dienų"
+      about_x_months:
+        one: "apie prieš %{count} mėnesį"
+        few: "apie prieš %{count} mėnesius"
+        other: "apie prieš %{count} mėnesių"
+      x_months:
+        one: "prieš %{count} mėnesį"
+        few: "prieš %{count} mėnesius"
+        other: "prieš %{count} mėnesių"
+      about_x_years:
+        one: "apie prieš %{count} metus"
+        few: "apie prieš %{count} metus"
+        other: "apie prieš %{count} metų"
+      over_x_years:
+        one: "prieš daugiau nei %{count} metus"
+        few: "prieš daugiau nei %{count} metus"
+        other: "prieš daugiau nei %{count} metų"
+      almost_x_years:
+        one: "beveik prieš %{count} metus"
+        few: "beveik prieš %{count} metus"
+        other: "beveik prieš %{count} metų"
+  password_reset:
+    choose_new: "Prašome pasirinkti naują slaptažodį"
+    choose: "Prašome pasirinkti slaptažodį"
+    update: 'Atnaujinti slaptažodį'
+    success: "Jūs sėkmingai pasikeitėte savo slaptažodį ir dabar esate prisijungęs."
+    success_unapproved: "Jūs sėkmingai pasikeitėte savo slaptažodį."
+  change_email:
+    confirmed: "Jūsų el. pašto adresas buvo atnaujintas."
+  post_action_types:
+    spam:
+      title: 'Šlamštas'
+    inappropriate:
+      title: 'Nederamas'
+    vote:
+      title: 'Balsuoti'
+      description: 'Balsuoti už šį pranešimą'
+      long_form: 'balsavote už šį pranešimą'
+  topic_flag_types:
+    spam:
+      title: 'Šlamštas'
+      long_form: 'pažymėtas kaip šlamštas'
+  reports:
+    posts:
+      title: "Pranešimai"
+      yaxis: "Nauji pranešimai"
+    top_traffic_sources:
+      num_clicks: "Paspaudimai"
+  site_settings:
+    ga_tracking_code: "Google analizės (ga.js) sekimo kodas, pvz: UA-12345678-9; žiūrėkite http://google.com/analytics"
+  search:
+    types:
+      category: 'Kategorijos'
+      topic: 'Rezultatai'
+      user: 'Vartotojai'
+  user:
+    no_accounts_associated: "Nėra susijusių paskyrų"
+  system_messages:
+    welcome_user:
+      subject_template: "Sveiki atvykę į %{site_name}!"
+    welcome_invite:
+      subject_template: "Sveiki atvykę į %{site_name}!"
+    backup_succeeded:
+      subject_template: "Atsarginė kopija sėkmingai užbaigta."
+  subject_pm: "[AŽ]"
+  user_notifications:
+    unsubscribe:
+      title: "Nebeprenumeruoti"
+    digest:
+      read_more: "Skaityti daugiau"
+    account_created:
+      subject_template: "[%{site_name}] Jūsų nauja paskyra"
+    authorize_email:
+      subject_template: "[%{site_name}] Patvirtinkite savo el. pašto adresą"
+  page_not_found:
+    title: "Tokio puslapio, kurį nurodėte, nėra arba jis yra privatus."
+    popular_topics: "Populiaros"
+    recent_topics: "Naujausios"
+    see_more: "Daugiau"
+    search_title: "Ieškoti svetainėje"
+    search_google: "Google"
+  deleted: 'ištrintas'
