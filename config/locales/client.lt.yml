@@ -122,6 +122,8 @@ lt:
       email: 'siųskite šią nuorodą į el. paštą'
     action_codes:
       split_topic: "padalinti temą %{when}"
+      invited_user: "%{who} pakvietė %{when}"
+      removed_user: "%{who} panaikino %{when}"
       autoclosed:
         enabled: 'uždaryta %{when}'
         disabled: 'atidaryta %{when}'
@@ -197,7 +199,7 @@ lt:
         all_time: "Per visą laiką"
         last_7_days: "Per paskutinias 7 dienas"
         last_30_days: "Per paskutinias 30 dienų"
-      like_count: "Patikimai"
+      like_count: "Patinka"
       topic_count: "Temos"
       post_count: "Įrašai"
       user_count: "Nauji vartotojai"
@@ -354,8 +356,8 @@ lt:
           title: "Nutildytos"
           description: "Tau nebus siunčiami pranešimai apie naujas temas šioje grupėje"
     user_action_groups:
-      '1': "Duota Patikimų"
-      '2': "Gauta patikimų"
+      '1': "Tau Patinka"
+      '2': "Žmonėms patinka"
       '3': "Žymės"
       '4': "Temos"
       '5': "Atsakymai"
@@ -678,7 +680,7 @@ lt:
         not_found: "Puslapis nerastas"
       desc:
         network: "Prašome patikrinti savo ryšį."
-        network_fixed: "Panašu, kad jis grįžo."
+        network_fixed: "Panašu, kad tai sugrįžo."
         server: "Klaidos kodas: {{status}}"
         forbidden: "Jums negalima peržiūrėti."
         not_found: "Oops, URL neegzistuoja."
@@ -692,7 +694,6 @@ lt:
     logout: "Jūs buvote atjungtas nuo sistemos."
     refresh: "Atnaujinti"
     read_only_mode:
-      enabled: "Skaitymo (read-only) režimas įjungtas. Jūs galite naršyti puslapyje, tačiau jokie veiksmai neveiks."
       login_disabled: "Prisijungimas yra išjungtas, kai svetainė yra skaitymo režime."
     too_few_topics_and_posts_notice: "Pradėkime <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>šią diskusiją!</a> Šiuo metu yra <strong>%{currentTopics} / %{requiredTopics}</strong> temų ir <strong>%{currentPosts} / %{requiredPosts}</strong> įrašų. Naujiems vartotojams reikia temų, kurias galėtų perskaityti ir atsakyti."
     too_few_topics_notice: "Pradėkime <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>šią diskusiją!</a> Šiuo metu yra <strong>%{currentTopics} / %{requiredTopics}</strong> temų. Naujiems vartotojams reikia temų, kurias galėtų skaityti ir atsakyti."
@@ -808,7 +809,7 @@ lt:
       ctrl: 'Ctrl'
       alt: 'Alt'
     composer:
-      emoji: "Emoij :smile:"
+      emoji: "Šypsenėlės :)"
       more_emoji: "daugiau..."
       options: "Nustatymai"
       whisper: "šnabždesys"
@@ -904,7 +905,7 @@ lt:
       invitee_accepted: "<i title='accepted your invitation' class='fa fa-user'></i><p><span>{{username}}</span> priemė jūsų pakvietimą</p>"
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> perkėlė {{description}}</p>"
       linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
-      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p>Užsidirbo '{{description}}'</p>"
+      granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p> Gavo '{{description}}'</p>"
       alt:
         mentioned: "Paminėta"
         quoted: "Cituota"
@@ -1544,7 +1545,6 @@ lt:
       email_in_allow_strangers: "Gauti el. laiškus iš anoniminių paskyrų neturinčių vartotojų "
       email_in_disabled: "Naujų temų kūrimas per el. paštą yra negalimas Puslapio Nustatymuose. Jei nori skelbti naujas temas per el. paštą,"
       email_in_disabled_click: 'nustatykite "email in"  nustatymus.'
-      contains_messages: "Pakeisti kategoriją, jog rodytų tik žinutes."
       suppress_from_homepage: "Nuslėpti šią kategoriją nuo pagrindinio puslaio"
       allow_badges_label: "Leisti trofėjų apdovanojimus šioje kategorijoje"
       edit_permissions: "Redaguoti leidimus"
@@ -1688,7 +1688,7 @@ lt:
         title_in: "Kategorija - {{categoryName}}"
         help: "Visos temos sugrupuotos pagal kategoriją"
       unread:
-        title: "Neperskaityta"
+        title: "Neperskaitytos"
         title_with_count:
           one: "Neperskaitytas (1)"
           few: "Neperskaitytos ({{count}})"
@@ -1704,7 +1704,7 @@ lt:
           few: "{{count}} nauji"
           other: "{{count}} nauji"
         lower_title: "Nauja"
-        title: "Naujas"
+        title: "Naujos"
         title_with_count:
           one: "Naujas (1)"
           few: "Naujos ({{count}})"
@@ -2088,9 +2088,8 @@ lt:
             name: 'wiki'
             description: "Pagrindinė spalva naudojama fonui ar wiki įrašams."
       email:
-        title: "El. paštas"
         settings: "Nustatymai"
-        all: "Visi"
+        preview_digest: "Parodyti Santrauką"
         sending_test: "Siunčiamas testinis el. laiškas..."
         error: "<b>ERROR</b> - %{server_error}"
         test_error: "Įvyko klaida siunčiant testinį el. laišką. Prašome dar kartą patikrinti pašto nustatymus, įsitikinkite, kad jūsų tiekėjas neblokuoja pašto prisijungimų ir bandykite dar kartą."
@@ -2105,7 +2104,6 @@ lt:
         send_test: "Siųsti testinį el. paštą"
         sent_test: "išsiųsta!"
         delivery_method: "Pristatymo metodas"
-        preview_digest: "Parodyti Santrauką"
         preview_digest_desc: "Parodyti el. laiško turinį, siunčiamą neaktyviems vartotojams"
         refresh: "Atnaujinti"
         format: "Formatas"
@@ -2177,6 +2175,8 @@ lt:
             change_category_settings: "keisti katetgorijos nustatymus"
             delete_category: "ištrinti kategoriją"
             create_category: "sukurti kategoriją"
+            block_user: "blokuoti žmogų"
+            unblock_user: "atblokuoti žmogų"
         screened_emails:
           title: "Tikrinti el. laiškai"
           description: "Kai kažkas kuria naują paskyrą, naudojamas el. pašto adresas bus patikrintas, o registracija bus užblokuota."
@@ -2349,6 +2349,8 @@ lt:
         deactivate_failed: "Įvyko klaida panaikinant vartotojui akvyvaciją."
         unblock_failed: 'Įvyko klaida atblokuojant vartotoją.'
         block_failed: 'Įvyko klaida užblokuojant vartotoją.'
+        block_confirm: 'Ar tikrai nori užblokuoti šį žmogų? Jis negalės kurti jokių naujų temų ar įrašų.'
+        block_accept: 'Taip, blokuoti'
         deactivate_explanation: "Vartotojui panaikinus aktyvaciją, jis turi patvirtinti savo el. pašto adresą iš naujo."
         suspended_explanation: "Sustabdytas vartotojas negali prisijungti."
         block_explanation: "Užblokuotas vartotojas negali kurti ar rašyti temų."
@@ -2631,6 +2633,11 @@ lt:
         mark_tracking: '<b>m</b>, <b>t</b> Sekti temą'
         mark_watching: '<b>m</b>, <b>w</b> Stebėti temą'
     badges:
+      earned_n_times:
+        one: "Trofėjus gautas 1 kartą"
+        few: "Trofėjus gautas %{count} kartų"
+        other: "Trofėjus gautas %{count} kartų"
+      more_with_badge: "Kiti su šiuo trofėjumi"
       title: Trofėjai
       allow_title: "gali būti naudojamas, kaip antraštė"
       multiple_grant: "gali būti apdovanotos daugiau negu vieną kartą"
