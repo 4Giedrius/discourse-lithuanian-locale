@@ -144,6 +144,19 @@ lt:
         disabled: 'neįtraukta į sąrašą %{when}'
     topic_admin_menu: "temos administravimo veiksmai"
     emails_are_disabled: "Visos išeinančios elektroninės žinutės buvo uždraustos administratoriaus. Jokių papildų įspėjamųjų žinučių nebus išsiųsta"
+    s3:
+      regions:
+        us_east_1: "US East (N. Virginia)"
+        us_west_1: "US West (N. California)"
+        us_west_2: "US West (Oregon)"
+        us_gov_west_1: "AWS GovCloud (US)"
+        eu_west_1: "EU (Ireland)"
+        eu_central_1: "EU (Frankfurt)"
+        ap_southeast_1: "Asia Pacific (Singapore)"
+        ap_southeast_2: "Asia Pacific (Sydney)"
+        ap_northeast_1: "Asia Pacific (Tokyo)"
+        ap_northeast_2: "Asia Pacific (Seoul)"
+        sa_east_1: "South America (Sao Paulo)"
     edit: 'redaguoti šios temos pavadinimą ir kateogoriją'
     not_implemented: "Ši funkcija dar neveikia, atsiprašome!"
     no_value: "Ne."
@@ -197,8 +210,8 @@ lt:
       our_moderators: "Mūsų Moderatoriai"
       stat:
         all_time: "Per visą laiką"
-        last_7_days: "Per paskutinias 7 dienas"
-        last_30_days: "Per paskutinias 30 dienų"
+        last_7_days: "Per paskutines 7 dienas"
+        last_30_days: "Per paskutines 30 dienų"
       like_count: "Patinka"
       topic_count: "Temos"
       post_count: "Įrašai"
@@ -216,7 +229,7 @@ lt:
       not_logged_in: "atsiprašome, jūs turite būti prisijungęs, kad galėtumete žymėti įrašus"
       created: "jūs pažymėjot šį įrašą"
       not_bookmarked: "jūs perskaitėte šį įrašą, spauskite, kad jį pažymėtumete"
-      last_read: "tai yra paskutinis perskaitytas įrašas; spauskite, kad uždėtumėt jam žymą"
+      last_read: "tai yra paskutinis perskaitytas įrašas; spausk, kad uždėtumėt jam žymą"
       remove: "Pašalinti Žymę"
       confirm_clear: "Ar tikrai norite ištrinti visas žymes iš šios temos?"
     topic_count_latest:
@@ -540,9 +553,9 @@ lt:
         authenticated: "Tavo elektroninis laiškas buvo {{provider}} autorizuotas"
         frequency_immediately: "Mes jums atsiųsime elektroninį laišką iš karto, jeigu jūs neperskaitėte žinutės, kurią siuntėme praeitame laiške."
         frequency:
-          one: "Mes jums atsiųsime el. laišką jeigu nebuvote prisijungęs per paskutinę minutę."
-          few: "Mes jums atsiųsime el. laišką jeigu nebuvote prisijungęs per paskutines {{count}} minutes."
-          other: "Mes jums atsiųsime el. laišką jeigu nebuvote prisijungęs per paskutines {{count}} minutes."
+          one: "Mes atsiųsime el. laišką jeigu nebuvai prisijungęs per paskutinę minutę."
+          few: "Mes atsiųsime el. laišką jeigu nebuvai prisijungęs per paskutines {{count}} minutes."
+          other: "Mes atsiųsime el. laišką jeigu nebuvai prisijungęs per paskutines {{count}} minutes."
       name:
         title: "Vardas"
         instructions: "Tavo pilnas vardas (pasirinktinai)"
@@ -594,9 +607,9 @@ lt:
         not_viewed: "Dar neperžiūrėjau"
         last_here: "sukurta nuo paskutinio karto"
         after_1_day: "sukurta per paskutines 24val."
-        after_2_days: "sukurta per paskutinias 2 dienas"
-        after_1_week: "sukurta per paskutinias 7 dienas"
-        after_2_weeks: "sukurta per paskutinias 2 savaites"
+        after_2_days: "sukurta per paskutines 2 dienas"
+        after_1_week: "sukurta per paskutines 7 dienas"
+        after_2_weeks: "sukurta per paskutines 2 savaites"
       auto_track_topics: "Automatiškai sekti temas, kurias aš įvedu"
       auto_track_options:
         never: "niekada"
@@ -652,6 +665,21 @@ lt:
         same_as_email: "Tavo slaptažodis yra toks pat, kaip ir el. adresas."
         ok: "Jūsų slaptažodis yra tinkamas."
         instructions: "Mažiausiai %{count} simbolių."
+      summary:
+        title: "Aprašymas"
+        stats: "Statistika"
+        topic_count: "Sukurta Temų"
+        post_count: "Sukurta Įrašų"
+        likes_given: "Tau Patinka"
+        likes_received: "Patinka Kitiems"
+        days_visited: "Apsilankė (dienomis)"
+        posts_read_count: "Perskaityta Įrašų"
+        top_replies: "Populiariausi Atsakymai"
+        top_topics: "Popiuliariausios Temos"
+        top_badges: "Populiariausi Trofėjai"
+        more_topics: "Daugiau Temų"
+        more_replies: "Daugiau Atsakymų"
+        more_badges: "Daugiau Trofėjų"
       associated_accounts: "Prisijungimas"
       ip_address:
         title: "Paskutinis IP adresas"
@@ -694,17 +722,18 @@ lt:
     logout: "Jūs buvote atjungtas nuo sistemos."
     refresh: "Atnaujinti"
     read_only_mode:
+      enabled: "Puslapis veikia skaitymo (read only) režimu. Gali ieškoti, atsakinėti ar spausti \"patinka\", tačiau kitos funkcijos šiuo metu yra negalimos."
       login_disabled: "Prisijungimas yra išjungtas, kai svetainė yra skaitymo režime."
     too_few_topics_and_posts_notice: "Pradėkime <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>šią diskusiją!</a> Šiuo metu yra <strong>%{currentTopics} / %{requiredTopics}</strong> temų ir <strong>%{currentPosts} / %{requiredPosts}</strong> įrašų. Naujiems vartotojams reikia temų, kurias galėtų perskaityti ir atsakyti."
     too_few_topics_notice: "Pradėkime <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>šią diskusiją!</a> Šiuo metu yra <strong>%{currentTopics} / %{requiredTopics}</strong> temų. Naujiems vartotojams reikia temų, kurias galėtų skaityti ir atsakyti."
     too_few_posts_notice: "Pradėkime <a href='http://blog.discourse.org/2014/08/building-a-discourse-community/'>šią diskusiją!</a>Šiuo metu yra <strong>%{currentPosts} / %{requiredPosts}</strong> įrašų. Naujiems vartotojams reikia temų, kurias galėtų skaityti ir atsakyti."
     learn_more: "sužinoti daugiau..."
     year: 'metai'
-    year_desc: 'sukurtos temos per paskutinias 365 dienas'
+    year_desc: 'sukurtos temos per paskutines 365 dienas'
     month: 'mėnesis'
-    month_desc: 'sukurta temų per paskutinias 30 dienų'
+    month_desc: 'sukurta temų per paskutines 30 dienų'
     week: 'savaitė'
-    week_desc: 'sukurta temų per paskutinias 7 dienas'
+    week_desc: 'sukurta temų per paskutines 7 dienas'
     day: 'diena'
     first_post: Pirmas įrašas
     mute: Nutildyti
@@ -2088,13 +2117,17 @@ lt:
             name: 'wiki'
             description: "Pagrindinė spalva naudojama fonui ar wiki įrašams."
       email:
+        title: "El. laiškai"
         settings: "Nustatymai"
+        templates: "Juodraščiai"
         preview_digest: "Parodyti Santrauką"
         sending_test: "Siunčiamas testinis el. laiškas..."
         error: "<b>ERROR</b> - %{server_error}"
         test_error: "Įvyko klaida siunčiant testinį el. laišką. Prašome dar kartą patikrinti pašto nustatymus, įsitikinkite, kad jūsų tiekėjas neblokuoja pašto prisijungimų ir bandykite dar kartą."
         sent: "Išsiųsti"
         skipped: "Praleisti"
+        received: "Gauta"
+        rejected: "Atmesta"
         sent_at: "Išsiųsta"
         time: "Laikas"
         user: "Vartotojas"
@@ -2112,6 +2145,19 @@ lt:
         last_seen_user: "Paskutinį kartą žiūrėti vartotojai:"
         reply_key: "Atsakymo nustatymai"
         skipped_reason: "Praleidimo priežastis"
+        incoming_emails:
+          from_address: "Nuo"
+          to_addresses: "Kam"
+          cc_addresses: "Cc"
+          subject: "Tema"
+          error: "Klaida"
+          none: "Nerasta jokių el. laiškų "
+          filters:
+            from_placeholder: "from@example.com"
+            to_placeholder: "to@example.com"
+            cc_placeholder: "cc@example.com"
+            subject_placeholder: "Tema..."
+            error_placeholder: "Klaida"
         logs:
           none: "Nerasta jokių įrašų."
           filters:
@@ -2125,7 +2171,7 @@ lt:
         title: "Įrašai"
         action: "Veiksmai"
         created_at: "Sukurtas"
-        last_match_at: "Pasktuniai Sutapę vartotojai"
+        last_match_at: "Paskutiniai Sutapę vartotojai"
         match_count: "Sutampantys vartotojai"
         ip_address: "IP"
         topic_id: "Temos ID"
@@ -2282,6 +2328,7 @@ lt:
         moderator: "Moderatorius?"
         admin: "Administratorius?"
         blocked: "Užblokuotas?"
+        staged: "Inscenizuotas?"
         show_admin_profile: "Administravimas"
         edit_title: "Redaguoti antraštę"
         save_title: "Išsaugoti antraštę"
@@ -2302,7 +2349,7 @@ lt:
         permissions: Leidimai
         activity: Aktyvumas
         like_count: Patikimai Duoti / Gauti
-        last_100_days: 'per paskutinias 100 dienų'
+        last_100_days: 'per paskutines 100 dienų'
         private_topics_count: Privačios temos
         posts_read_count: Perskaityti pranešimai
         post_count: Sukurti pranešimai
@@ -2354,6 +2401,7 @@ lt:
         deactivate_explanation: "Vartotojui panaikinus aktyvaciją, jis turi patvirtinti savo el. pašto adresą iš naujo."
         suspended_explanation: "Sustabdytas vartotojas negali prisijungti."
         block_explanation: "Užblokuotas vartotojas negali kurti ar rašyti temų."
+        stage_explanation: "Inscenizuotas vartotojas gali skelbti įrašus tik specialiose temose."
         trust_level_change_failed: "Įvyko klaida keičiant vartotojo pasitikėjimo lygį."
         suspend_modal_title: "Sustabdyti vartotoją"
         trust_level_2_users: "Vartotojai su 2 Pasitikėjimo Statusu "
