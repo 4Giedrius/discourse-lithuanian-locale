@@ -112,6 +112,8 @@ lt:
           one: "Po 1 metų"
           few: "po %{count} metų"
           other: "po %{count} metų"
+      previous_month: 'Praėjusį mėnesį'
+      next_month: 'Ateinantį mėnesį'
     share:
       topic: 'pasidalinti nuoroda į šią temą'
       post: 'įrašas #%{postNumber}'
@@ -202,6 +204,7 @@ lt:
       other: "{{count}} simbolių"
     suggested_topics:
       title: "Siūlomos Temos"
+      pm_title: "Rekomenduojamos žinutės"
     about:
       simple_title: "Apie"
       title: "Apie %{title}"
@@ -504,6 +507,7 @@ lt:
         groups: "Grupės"
         bulk_select: "Pasirinkti žinutę"
         move_to_inbox: "Perkelti į Pranešimų dėžutę"
+        move_to_archive: "Archyvuoti"
         failed_to_move: "Įvyko klaida! (patikrinkite interneto ryšį)"
         select_all: "Pažymėti visus"
       change_password:
@@ -934,6 +938,10 @@ lt:
       moved_post: "<i title='moved post' class='fa fa-sign-out'></i><p><span>{{username}}</span> perkėlė {{description}}</p>"
       linked: "<i title='linked post' class='fa fa-arrow-left'></i><p><span>{{username}}</span> {{description}}</p>"
       granted_badge: "<i title='badge granted' class='fa fa-certificate'></i><p> Gavo '{{description}}'</p>"
+      group_message_summary:
+        one: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} žinutė {{group_name}} pašto dėžutėje</p>"
+        few: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} žinučių {{group_name}} pašto dėžutėje</p>"
+        other: "<i title='messages in group inbox' class='fa fa-group'></i><p> {{count}} žinučių {{group_name}} pašto dėžutėje</p>"
       alt:
         mentioned: "Paminėta"
         quoted: "Cituota"
@@ -948,6 +956,7 @@ lt:
         moved_post: "Tavo įrašas buvo perkeltas"
         linked: "Nuoroda į įrašą"
         granted_badge: "Gautas Statusas"
+        group_message_summary: "Žinučių grupinėje pašto dėžutėje"
       popup:
         mentioned: '{{username}} paminėjo tave "{{topic}}" - {{site_title}}'
         group_mentioned: '{{username}} paminėjo tave "{{topic}}" - {{site_title}}'
@@ -1829,6 +1838,7 @@ lt:
           refresh_report: "Refresh Report"
           start_date: "Pražios data"
           end_date: "End Date"
+          groups: "Visos grupės"
       commits:
         latest_changes: "Paskutiniai pakeitimai:"
         by: "nuo"
@@ -2222,6 +2232,10 @@ lt:
             create_category: "sukurti kategoriją"
             block_user: "blokuoti žmogų"
             unblock_user: "atblokuoti žmogų"
+            grant_admin: "suteikti administratoriaus teises"
+            revoke_admin: "atšaukti administratoriaus teises"
+            grant_moderation: "suteikti moderatoriaus teises"
+            revoke_moderation: "atšaukti moderatoriaus teises"
         screened_emails:
           title: "Tikrinti el. laiškai"
           description: "Kai kažkas kuria naują paskyrą, naudojamas el. pašto adresas bus patikrintas, o registracija bus užblokuota."

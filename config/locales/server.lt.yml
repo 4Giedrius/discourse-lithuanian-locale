@@ -3,6 +3,11 @@ lt:
     short_date_no_year: "D MMM"
     short_date: "D MMM, YYYY"
     long_date: "MMMM D, YYYY h:mma"
+  datetime_formats:
+    formats:
+      short: "%m-%d-%Y"
+      short_no_year: "%B %-d"
+      date_only: "%B %-d, %Y"
   title: "Discourse"
   topics: "Temos"
   posts: "žinutės"
@@ -12,6 +17,7 @@ lt:
   backup:
     not_enough_space_on_disk: "Diske neužtenka vietos įkelti šiai atsarginei kopijai."
   not_logged_in: "Norint tęsti, jums reikia būti prisijungusiam."
+  likes: "Patikimai"
   embed:
     start_discussion: "Pradėti diskusiją"
     continue: "Tęsti diskusiją"
@@ -61,6 +67,8 @@ lt:
     attributes:
       category:
         name: "Kategorijos pavadinimas"
+      post:
+        raw: "Tekstas"
       user_profile:
         bio_raw: "Apie mane"
     errors:
@@ -198,6 +206,7 @@ lt:
     choose_new: "Prašome pasirinkti naują slaptažodį"
     choose: "Prašome pasirinkti slaptažodį"
     update: 'Atnaujinti slaptažodį'
+    title: 'Keisti slaptažodį'
     success: "Jūs sėkmingai pasikeitėte savo slaptažodį ir dabar esate prisijungęs."
     success_unapproved: "Jūs sėkmingai pasikeitėte savo slaptažodį."
   change_email:
@@ -207,6 +216,8 @@ lt:
       title: 'Šlamštas'
     inappropriate:
       title: 'Nederamas'
+    bookmark:
+      title: 'Žymės'
     vote:
       title: 'Balsuoti'
       description: 'Balsuoti už šį pranešimą'
@@ -215,12 +226,31 @@ lt:
     spam:
       title: 'Šlamštas'
       long_form: 'pažymėtas kaip šlamštas'
+  archetypes:
+    banner:
+      title: "Paryškinta Tema"
   reports:
+    signups:
+      title: "Nauji vartotojai"
+    topics:
+      title: "Temos"
     posts:
       title: "Pranešimai"
       yaxis: "Nauji pranešimai"
+    likes:
+      title: "Patikimai"
+    flags:
+      title: "Pažymėk!"
+    bookmarks:
+      title: "Žymės"
+    top_referrers:
+      num_topics: "Temos"
     top_traffic_sources:
       num_clicks: "Paspaudimai"
+      num_topics: "Temos"
+      num_users: "Vartotojai"
+    top_referred_topics:
+      xaxis: "Tema"
   site_settings:
     ga_tracking_code: "Google analizės (ga.js) sekimo kodas, pvz: UA-12345678-9; žiūrėkite http://google.com/analytics"
   search:
@@ -228,6 +258,8 @@ lt:
       category: 'Kategorijos'
       topic: 'Rezultatai'
       user: 'Vartotojai'
+  login:
+    admin_not_allowed_from_ip_address: "Tu negali prisijungti kaip administratorius iš šio IP adreso."
   user:
     no_accounts_associated: "Nėra susijusių paskyrų"
   system_messages:
@@ -255,3 +287,4 @@ lt:
     search_title: "Ieškoti svetainėje"
     search_google: "Google"
   deleted: 'ištrintas'
+  guidelines: "Instrukcijos"
